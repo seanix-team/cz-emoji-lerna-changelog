@@ -1,0 +1,55 @@
+{
+  "name": "@seanix/cz-emoji-lerna-changelog",
+  "version": "1.0.0",
+  "description": "A commitizen adapter developed by cz-lerna-changelog and cz-emoji.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --delete-dir-on-start -D -d lib",
+    "commit": "git-cz",
+    "prepublish": "npm run build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "abc": "git add . && pnpm run build && pnpm cz"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "RainyLiao liaowenrun@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@lerna/project": "^4.0.0",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "chalk": "^4.1.2",
+    "cli-truncate": "^2.1.0",
+    "find-up": "^5.0.0",
+    "homedir": "^0.6.0",
+    "inquirer-autocomplete-prompt": "^2.0.0",
+    "inquirer-maxlength-input-prompt": "^1.0.2",
+    "pad": "^3.2.0",
+    "wrap-ansi": "^7.0.0"
+  },
+  "peerDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "commitizen": "^4.2.4",
+    "inquirer": "^8.2.2",
+    "lerna": "^4.0.0",
+    "prettier": "^2.6.2",
+    "semantic-release": "^19.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./lib/index.js"
+    }
+  }
+}

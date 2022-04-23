@@ -1,0 +1,104 @@
+[
+  {
+    "emoji": "✨",
+    "code": ":sparkles:",
+    "description": "一个新功能 (注意：这可能需要发布一个新的版本号)。",
+    "name": "feat"
+  },
+  {
+    "emoji": "🐛",
+    "code": ":bug:",
+    "description": "bug修改 (注意：这可能需要发布一个新的版本号)。",
+    "name": "fix"
+  },
+  {
+    "emoji": "💄",
+    "code": ":lipstick:",
+    "description": "更新 UI 和样式文件。",
+    "name": "ui"
+  },
+  {
+    "emoji": "🎨",
+    "code": ":art:",
+    "description": "改进代码结构/代码格式 (不影响代码的修改，空白符、格式化、缺少分号, 等等)。",
+    "name": "style"
+  },
+  {
+    "emoji": "♻️",
+    "code": ":recycle:",
+    "description": "重构代码。",
+    "name": "refactor"
+  },
+  {
+    "emoji": "⚡️",
+    "code": ":zap:",
+    "description": "提高性能的代码更改。",
+    "name": "perf"
+  },
+  {
+    "emoji": "📝",
+    "code": ":pencil:",
+    "description": "编写文档。",
+    "name": "docs"
+  },
+  {
+    "emoji": "🔀",
+    "code": ":twisted_rightwards_arrows:",
+    "description": "合并分支。",
+    "name": "merge"
+  },
+  {
+    "emoji": "🏷️",
+    "code": ":label:",
+    "description": "添加或更新类型定义文件(flow、typescript)。",
+    "name": "types"
+  },
+  {
+    "emoji": "🔧",
+    "code": ":wrench:",
+    "description": "对构建过程或辅助工具的更改。",
+    "name": "chore"
+  },
+  {
+    "emoji": "🔥",
+    "code": ":fire:",
+    "description": "删除代码或文件。",
+    "name": "prune"
+  },
+  {
+    "emoji": "⏪",
+    "code": ":rewind:",
+    "description": "回滚commit。",
+    "name": "revert"
+  },
+  {
+    "emoji": "🔖",
+    "code": ":bookmark:",
+    "description": "发布/版本标签。",
+    "name": "release"
+  },
+  {
+    "emoji": "✅",
+    "code": ":white_check_mark:",
+    "description": "添加测试文件。",
+    "name": "test"
+  },
+  {
+    "emoji": "👷",
+    "code": ":construction_worker:",
+    "description": "CI/CD相关构建系统。",
+    "name": "ci"
+  },
+  {
+    "emoji": "🐳",
+    "code": ":whale:",
+    "description": "Docker 相关的工作。",
+    "name": "docker"
+  },
+  {
+    "emoji": "🎉",
+    "code": ":tada:",
+    "description": "初始化提交。",
+    "name": "init"
+  }
+]
