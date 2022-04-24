@@ -48,6 +48,9 @@
   "config": {
     "commitizen": {
       "path": "./lib/index.js"
+    },
+    "@seanix/cz-emoji": {
+      "lang": "zh-CN"
     }
   }
 }

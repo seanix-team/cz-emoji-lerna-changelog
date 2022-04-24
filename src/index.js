@@ -6,11 +6,9 @@ import chalk from 'chalk'
 import homedir from 'homedir'
 import wrapAnsi from 'wrap-ansi'
 import pad from 'pad'
-import { loadConfigUpwards, loadConfig } from './utils/load-config'
+import { loadConfigUpwards, loadFileContent, loadConfig } from './utils/load-config'
 import generateQuestions from './utils/generate-questions'
 import { formatIssues, formatHead } from './utils/format'
-import types from './types.json'
-
 /**
  * @description 读取package.json和项目或全局的.czrc里的配置
  *
@@ -18,11 +16,11 @@ import types from './types.json'
  */
 async function getConfig() {
   const defaultConfig = {
-    types,
     symbol: true,
     skipQuestions: [''],
-    subjectMaxLength: 75,
+    subjectMaxLength: 100,
     conventional: true,
+    lang: 'en-US',
   }
 
   const config =
@@ -30,7 +28,14 @@ async function getConfig() {
     (await loadConfigUpwards('.czrc')) ||
     (await loadConfig(path.join(homedir(), '.czrc')))
 
-  return { ...defaultConfig, ...config }
+  // 将默认语言与用户传进来的语言合并，然后获取对应的数据
+  const lang = config?.lang ? config.lang : defaultConfig.lang;
+
+  const localesPath = path.resolve(__dirname, `./locales/${lang}.json`)
+  const locales = await loadFileContent(localesPath)
+
+  const mergeConfig = { ...defaultConfig, ...locales, ...config }
+  return mergeConfig
 }
 
 /**
@@ -39,7 +44,7 @@ async function getConfig() {
  * @param {Object} config
  * @returns
  */
-function getEmojiChoices({ types, symbol }) {
+function getEmojiChoices({ types, symbol, locales }) {
   const maxNameLength = types.reduce(
     (maxLength, type) => (type.name.length > maxLength ? type.name.length : maxLength),
     0
@@ -99,7 +104,7 @@ function format(answers, config) {
       : ''
   const footer = formatIssues(answers.footer)
   const message = [head, body, breaking, footer].filter(Boolean).join('\n\n').trim()
-  console.log('\n\n此次提交的内容为:')
+  console.log('\n\nThe content submitted:')
   console.log(chalk.redBright(`\n\n${message}\n`))
   return message
 }

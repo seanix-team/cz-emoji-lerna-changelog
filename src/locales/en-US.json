@@ -1,0 +1,103 @@
+{
+  "questions": {
+    "type": "Please enter or select the commit type you are submitted:",
+    "packages": "Please select the affected packages, only check if the code in the subpackage has changed:",
+    "scope": "Represents the range of this change (optional):",
+    "subject": "Write a short prayer sentence to describe (required):",
+    "body": "Provide a detailed description of the change (optional). Use \"|\" to wrap lines:",
+    "breaking": "List any major changes (optional):",
+    "footer": "List all issues closed by this change (optional). For example #1, #2:"
+  },
+  "types": [
+    {
+      "emoji": "✨",
+      "code": ":sparkles:",
+      "description": "A new feature (note: this may require a new version number to be released).",
+      "name": "feat"
+    },
+    {
+      "emoji": "🐛",
+      "code": ":bug:",
+      "description": "Bug fixes (note: this may require a new version number to be released).",
+      "name": "fix"
+    },
+    {
+      "emoji": "💄",
+      "code": ":lipstick:",
+      "description": "Update UI and style files.",
+      "name": "ui"
+    },
+    {
+      "emoji": "🎨",
+      "code": ":art:",
+      "description": "Improving structure / format of the code(does not affect code modifications, whitespace, formatting, missing semicolons, etc).",
+      "name": "style"
+    },
+    {
+      "emoji": "♻️",
+      "code": ":recycle:",
+      "description": "A code refactoring change.",
+      "name": "refactor"
+    },
+    {
+      "emoji": "⚡️",
+      "code": ":zap:",
+      "description": "Improving performance.",
+      "name": "perf"
+    },
+    {
+      "emoji": "📝",
+      "code": ":pencil:",
+      "description": "Writing docs.",
+      "name": "docs"
+    },
+    {
+      "emoji": "🔀",
+      "code": ":twisted_rightwards_arrows:",
+      "description": "Merging branches.",
+      "name": "merge"
+    },
+    {
+      "emoji": "🔧",
+      "code": ":wrench:",
+      "description": "Other changes that don't modify src or test files.",
+      "name": "chore"
+    },
+    {
+      "emoji": "🔥",
+      "code": ":fire:",
+      "description": "Removing code or files.",
+      "name": "prune"
+    },
+    {
+      "emoji": "⏪",
+      "code": ":rewind:",
+      "description": "Reverting changes.",
+      "name": "revert"
+    },
+    {
+      "emoji": "🔖",
+      "code": ":bookmark:",
+      "description": "Releasing / Version tags.",
+      "name": "release"
+    },
+    {
+      "emoji": "✅",
+      "code": ":white_check_mark:",
+      "description": "Adding tests.",
+      "name": "test"
+    },
+    {
+      "emoji": "👷",
+      "code": ":construction_worker:",
+      "description": "CI/CD build system.",
+      "name": "ci"
+    },
+    {
+      "emoji": "🎉",
+      "code": ":tada:",
+      "description": "Initial commit.",
+      "name": "init"
+    }
+  ]
+}

@@ -6,10 +6,13 @@ const loadConfigUpwards = (filename) => {
 }
 
 const loadConfig = (filename) => {
-  return readFile(filename, 'utf8')
-    .then(JSON.parse)
-    .then((obj) => obj && obj.config && obj.config['cz-emoji'])
+  return loadFileContent(filename)
+    .then((obj) => obj && obj.config && obj.config['@seanix/cz-emoji'])
     .catch(() => null)
 }
 
-export { loadConfigUpwards, loadConfig }
+const loadFileContent = (filePath) => {
+  return readFile(filePath, 'utf8').then(JSON.parse)
+}
+
+export { loadConfigUpwards, loadConfig, loadFileContent }
