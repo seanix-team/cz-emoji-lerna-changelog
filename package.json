@@ -10,6 +10,11 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "abc": "git add . && pnpm run build && pnpm cz"
   },
+  "homepage": "https://github.com/seanix-team/cz-emoji-lerna-changelog",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seanix-team/cz-emoji-lerna-changelog"
+  },
   "files": [
     "lib",
     "src"
@@ -48,9 +53,6 @@
   "config": {
     "commitizen": {
       "path": "./lib/index.js"
-    },
-    "@seanix/cz-emoji": {
-      "lang": "zh-CN"
     }
   }
 }
