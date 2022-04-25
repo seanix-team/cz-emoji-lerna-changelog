@@ -7,7 +7,6 @@
     "build": "babel src --delete-dir-on-start -D -d lib",
     "commit": "git-cz",
     "prepublish": "npm run build",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "abc": "git add . && pnpm run build && pnpm cz"
   },
   "homepage": "https://github.com/seanix-team/cz-emoji-lerna-changelog",
@@ -22,7 +21,14 @@
   "workspaces": [
     "packages/*"
   ],
-  "keywords": [],
+  "keywords": [
+    "@seanix",
+    "cz-emoji-lerna-changelog",
+    "cz-emoji",
+    "commitizen",
+    "adapter",
+    "emoji"
+  ],
   "author": "RainyLiao liaowenrun@gmail.com",
   "license": "ISC",
   "dependencies": {
