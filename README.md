@@ -67,7 +67,7 @@ Configuring `cz-emoji` can be handled in the users home directory (`~/.czrc`) fo
 ```json
 {
   "config": {
-    "cz-emoji": {}
+    "@seanix/cz-emoji": {}
   }
 }
 ```
@@ -81,7 +81,7 @@ You can configure the language displayed by inquiar, support "zh-CN" and "en-US"
 ```json
 {
   "config": {
-    "cz-emoji": {
+    "@seanix/cz-emoji": {
       "lang": "zh-CN"
     }
   }
@@ -95,7 +95,7 @@ An [Inquirer.js] choices array:
 ```json
 {
   "config": {
-    "cz-emoji": {
+    "@seanix/cz-emoji": {
       "types": [
         {
           "emoji": "🌟",
@@ -116,7 +116,7 @@ An [Inquirer.js] choices array:
 ```json
 {
   "config": {
-    "cz-emoji": {
+    "@seanix/cz-emoji": {
       "scopes": ["home", "accounts", "ci"]
     }
   }
@@ -130,7 +130,7 @@ A boolean value that allows for an using a unicode value rather than the default
 ```json
 {
   "config": {
-    "cz-emoji": {
+    "@seanix/cz-emoji": {
       "symbol": true
     }
   }
@@ -144,7 +144,7 @@ An array of questions you want to skip:
 ```json
 {
   "config": {
-    "cz-emoji": {
+    "@seanix/cz-emoji": {
       "skipQuestions": ["scope", "issues"]
     }
   }
@@ -160,7 +160,7 @@ An object that contains overrides of the original questions:
 ```json
 {
   "config": {
-    "cz-emoji": {
+    "@seanix/cz-emoji": {
       "questions": {
         "body": "This will be displayed instead of original text"
       }
@@ -176,7 +176,7 @@ The maximum length you want your subject has
 ```json
 {
   "config": {
-    "cz-emoji": {
+    "@seanix/cz-emoji": {
       "subjectMaxLength": 200
     }
   }
