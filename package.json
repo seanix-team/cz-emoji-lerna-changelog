@@ -30,7 +30,10 @@
     "emoji"
   ],
   "author": "RainyLiao liaowenrun@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@lerna/project": "^4.0.0",
@@ -38,13 +41,10 @@
     "cli-truncate": "^2.1.0",
     "find-up": "^5.0.0",
     "homedir": "^0.6.0",
-    "inquirer-autocomplete-prompt": "^2.0.0",
+    "inquirer-autocomplete-prompt": "^1.4.0",
     "inquirer-maxlength-input-prompt": "^1.0.2",
     "pad": "^3.2.0",
     "wrap-ansi": "^7.0.0"
-  },
-  "peerDependencies": {
-    "lerna": "^4.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
@@ -52,13 +52,16 @@
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "commitizen": "^4.2.4",
-    "inquirer": "^8.2.2",
+    "inquirer": "^6.5.2",
     "lerna": "^4.0.0",
     "prettier": "^2.6.2"
   },
   "config": {
     "commitizen": {
       "path": "./lib/index.js"
+    },
+    "@seanix/cz-emoji": {
+      "skipQuestions": ["packages"]
     }
   }
 }

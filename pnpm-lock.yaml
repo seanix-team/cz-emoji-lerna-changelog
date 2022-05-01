@@ -13,7 +13,7 @@ specifiers:
   find-up: ^5.0.0
   homedir: ^0.6.0
   inquirer: ^8.2.2
-  inquirer-autocomplete-prompt: ^2.0.0
+  inquirer-autocomplete-prompt: ^1.4.0
   inquirer-maxlength-input-prompt: ^1.0.2
   lerna: ^4.0.0
   pad: ^3.2.0
@@ -27,7 +27,7 @@ dependencies:
   cli-truncate: 2.1.0
   find-up: 5.0.0
   homedir: 0.6.0
-  inquirer-autocomplete-prompt: 2.0.0_inquirer@8.2.2
+  inquirer-autocomplete-prompt: 1.4.0_inquirer@8.2.2
   inquirer-maxlength-input-prompt: 1.0.2
   pad: 3.2.0
   wrap-ansi: 7.0.0
@@ -3822,18 +3822,18 @@ packages:
       validate-npm-package-name: 3.0.0
     dev: true
 
-  /inquirer-autocomplete-prompt/2.0.0_inquirer@8.2.2:
-    resolution: {integrity: sha512-c2LljLP3ewVJe4AUZzKdA6oWjqhpy5pfsisHAjh7mP3WUQ/O02x5OLMMqcLOYuRHx6i2hlVSIhUv0xYGyFxFYA==}
-    engines: {node: '>=12'}
+  /inquirer-autocomplete-prompt/1.4.0_inquirer@8.2.2:
+    resolution: {integrity: sha512-qHgHyJmbULt4hI+kCmwX92MnSxDs/Yhdt4wPA30qnoa01OF6uTXV8yvH4hKXgdaTNmkZ9D01MHjqKYEuJN+ONw==}
+    engines: {node: '>=10'}
     peerDependencies:
-      inquirer: ^8.0.0
+      inquirer: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       ansi-escapes: 4.3.2
+      chalk: 4.1.2
       figures: 3.2.0
       inquirer: 8.2.2
-      picocolors: 1.0.0
       run-async: 2.4.1
-      rxjs: 7.5.5
+      rxjs: 6.6.7
     dev: false
 
   /inquirer-maxlength-input-prompt/1.0.2:
@@ -5185,6 +5185,7 @@ packages:
 
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    dev: true
 
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
@@ -5607,12 +5608,12 @@ packages:
     engines: {npm: '>=2.0.0'}
     dependencies:
       tslib: 1.14.1
-    dev: true
 
   /rxjs/7.5.5:
     resolution: {integrity: sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==}
     dependencies:
       tslib: 2.4.0
+    dev: true
 
   /safe-buffer/5.1.2:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}
@@ -6091,10 +6092,10 @@ packages:
 
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
-    dev: true
 
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: true
 
   /tunnel-agent/0.6.0:
     resolution: {integrity: sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==}

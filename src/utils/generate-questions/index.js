@@ -67,6 +67,7 @@ async function generateQuestions(choices, config) {
       default: changedPackages,
       choices: allPackages,
       message: `${config.questions?.packages}\n`,
+      when: !config.skipQuestions.includes('packages'),
     },
     {
       type: config.scopes ? 'list' : 'input',
