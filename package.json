@@ -1,6 +1,6 @@
 {
   "name": "@seanix/cz-emoji-lerna-changelog",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A commitizen adapter developed by cz-lerna-changelog and cz-emoji.",
   "main": "lib/index.js",
   "scripts": {
